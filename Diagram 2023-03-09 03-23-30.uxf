@@ -1,0 +1,86 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>8</zoom_level><element><id>UMLHierarchy</id><coordinates><x>8</x><y>24</y><w>248</w><h>192</h></coordinates><panel_attributes>type=Package
+edu
+	neumont
+		csc150
+			potions
+				maker
+				actual</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>288</x><y>24</y><w>176</w><h>48</h></coordinates><panel_attributes>Main
+--
+Basic class with run statement inside
+--
+in the csc150 package</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>24</y><w>304</w><h>120</h></coordinates><panel_attributes>PotionMaker
+--
+class that takes ingredients and makes potions
+--
+options to make your own potion(1, 2, and 3 effects respectively)
+options to make random potions
+make a random number of potions(random potions and number
+of potions)
+list potions
+--
+inside the maker package</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>456</x><y>40</y><w>120</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>8</x><y>232</y><w>312</w><h>152</h></coordinates><panel_attributes>Enum: Ingredients
+--
+a list of ingredients that can be used
+--
+Ingredients in enum
+ - lizards_tail
+ - spider_glands
+ - chicken_blood
+ - bear_fat
+ - rum
+ - sugar
+--
+inside actual package</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>448</y><w>192</w><h>96</h></coordinates><panel_attributes>/potion/
+--
+effect(String)
+ingredient(Ingredients: enum)
+--
+Ingredient(method) - passes in a string
+setEffect(method) - returns a string
+--
+inside actual package</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>704</x><y>440</y><w>240</w><h>96</h></coordinates><panel_attributes>/potion2/
+--
+based off of potion class
+adds another ingredient and its method
+--
+ingredient2(Ingredients: enum)
+--
+Ingredient2(method) - passes in a string
+--
+inside actual package</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>584</x><y>480</y><w>136</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;150;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>368</x><y>264</y><w>288</w><h>96</h></coordinates><panel_attributes>potionDecider
+--
+puts the Ingredient and setEffect method to use
+--
+Ingredient - takes in a string and converts it to its enum form
+setEffect - takes in the now converted enum and returns an
+ effect(returns string)
+--
+inside actual package</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>496</x><y>352</y><w>24</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>264</y><w>288</w><h>120</h></coordinates><panel_attributes>potionDecider2
+--
+puts the Ingredient and setEffect method to use as the prior
+ one did but now adding in the second ingredient conversion
+--
+Ingredient - takes in a string and converts it to its enum form
+Ingredient2 - takes in a string and converts it to its enum form
+setEffect - takes in the now converted enum and returns an
+ effect(returns string)
+--
+inside actual package</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>816</x><y>376</y><w>24</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1024</x><y>264</y><w>328</w><h>200</h></coordinates><panel_attributes>potionDecider3
+--
+adds the third and final ingredient and its method
+--
+ingredient3(Ingredients: enum)
+--
+Ingredient3(method) - passes in a string
+--
+puts the Ingredient and setEffect method to use as the prior
+ one did but now adding in the second and third ingredient
+ conversion
+--
+Ingredient - takes in a string and converts it to its enum form
+Ingredient2 - takes in a string and converts it to its enum form
+Ingredient3 - takes in a string and converts it to its enum form
+setEffect - takes in the three converted enum and returns effects
+ in string format 
+--
+inside actual package</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>936</x><y>320</y><w>104</w><h>176</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;200;110;10</additional_attributes></element><element><id>Relation</id><coordinates><x>512</x><y>136</y><w>120</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>704</x><y>136</y><w>144</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;160;160</additional_attributes></element><element><id>Relation</id><coordinates><x>856</x><y>88</y><w>344</w><h>192</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;410;220</additional_attributes></element></diagram>
