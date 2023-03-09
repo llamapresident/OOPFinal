@@ -14,18 +14,13 @@ public class potionDecider extends potion{
 
     @Override
     public void setEffect() {
-        if (this.ingredient == Ingredients.bear_fat){
-            this.effect = "Warmth";
-        } else if (this.ingredient == Ingredients.rum) {
-            this.effect = "strength";
-        } else if (this.ingredient == Ingredients.chicken_blood) {
-            this.effect = "Courage";
-        } else if (this.ingredient == Ingredients.spider_glands) {
-            this.effect = "poison";
-        } else if (this.ingredient == Ingredients.lizards_tail) {
-            this.effect = "Regeneration";
-        } else if (this.ingredient == Ingredients.sugar) {
-            this.effect = "Speed";
+        switch (this.ingredient){
+            case bear_fat -> this.effect = "warmth";
+            case rum -> this.effect = "Strength";
+            case chicken_blood -> this.effect = "Courage";
+            case spider_glands -> this.effect = "Poison";
+            case lizards_tail -> this.effect = "Regeneration";
+            case sugar -> this.effect = "Speed";
         }
     }
 
